@@ -13,7 +13,7 @@ class Resolve
 
     public function __construct(Client $client)
     {
-        $this->client;
+        $this->client = $client;
         $this->time = time();
     }
 
@@ -38,7 +38,7 @@ class Resolve
         $url = new URL($this->client->getServe());
         $url->addQuery('time', $this->time);
         $url->addQuery('sign', $this->getSign());
-        $url->addQuery('action', 'auth/login');
+        $url->addQuery('action', 'auth/resolve');
 
         return $url->make();
     }

@@ -12,7 +12,7 @@ class Create
 
     public function __construct(Client $client)
     {
-        $this->client;
+        $this->client = $client;
         $this->time = time();
     }
 

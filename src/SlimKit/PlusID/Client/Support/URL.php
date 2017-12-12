@@ -69,9 +69,9 @@ class URL
     public function __construct(string $uri)
     {
         $parts = parse_url(urldecode($uri));
-        if (array_get($parts, 'scheme') === 'http' && ! array_get($parts, 'port')) {
+        if (($parts['scheme'] ?? null) === 'http' && ! ($parts['port'] ?? null)) {
             $this->port = 80;
-        } elseif (array_get($parts, 'scheme') === 'https' && ! array_get($parts, 'port')) {
+        } elseif (($parts['scheme'] ?? null) === 'https' && ! ($parts['port'] ?? null)) {
             $this->port = 443;
         }
 

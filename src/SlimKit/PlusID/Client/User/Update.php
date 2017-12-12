@@ -12,7 +12,7 @@ class Update
 
     public function __construct(Client $client, int $user)
     {
-        $this->client;
+        $this->client = $client;
         $this->user = $user;
         $this->time = time();
     }

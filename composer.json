@@ -9,7 +9,7 @@
             "email": "shiweidu@outlook.com"
         }
     ],
-    "authload": {
+    "autoload": {
         "psr-4": {
             "SlimKit\\PlusID\\Client\\": "src/SlimKit/PlusID/Client/"
         }
