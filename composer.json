@@ -1,0 +1,13 @@
+{
+    "name": "slimkit/plus-id-sdk",
+    "description": "Plus ID SDK.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Seven Du",
+            "email": "shiweidu@outlook.com"
+        }
+    ],
+    "require": {}
+}
