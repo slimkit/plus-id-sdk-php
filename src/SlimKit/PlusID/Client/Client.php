@@ -32,6 +32,7 @@ class Client
      */
     public function getSign(array $action = []): string
     {
+        $action['tc'] = floor(time() / 300);
         ksort($action);
         $action = json_encode($action);
 
